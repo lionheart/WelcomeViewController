@@ -1,3 +1,4 @@
+000a9fb05b1879634af3709eec5e8366 .git/objects/54/562806ca99693cfde3f584b29aecb48208a420
 008e758a845931857606b81421313f22 bump_version.sh
 011712ee86cf83918fc1ade62928c05c .git/objects/6c/4e8fdb3324594e85cc3cd44f634e6b823de8c0
 013a74de3b401ae3aa147759b8e79930 .git/objects/b4/f8c5b127fbdf331eea5d81662f458e0321b2d7
@@ -12,7 +13,6 @@
 046505047188b406a8ac99785149d31e .git/objects/52/4902782de2d1ebf773753828b2e06080805882
 04c12650cc929d4e30a82a8d44f6b382 Example/Pods/Nimble/Sources/Nimble/Matchers/BeAnInstanceOf.swift
 06c10702b37d73d240487dedf12d679b .git/objects/c7/7a8fce7acf0c3cface1e6fa7d1b5bf5311f941
-06d2908c6e5e3f6d3cbbd1153fd97d40 .git/logs/refs/remotes/origin/master
 0778ca77768056604cc52fcd246563ce .git/objects/a0/a803195fb1dfb3294da918812df07a37e435d2
 07d402b5d296cac2c0138fbc8601592b .git/objects/3a/49427564c5f614cf11b2e7d88effcc0be95b59
 07e61601f9d22aa18428f699410562ea Example/Pods/Nimble/Sources/Nimble/Matchers/BeLessThanOrEqual.swift
@@ -28,12 +28,10 @@
 0c084ffdb927e6d75909e602f20f2451 .git/objects/2e/ac1366de396bde4b3d66bc8bff4e102770b367
 0c4bd2e893bd4810489767f311a3e2c4 .git/objects/a2/2e0f4c11f81d6f6e0f3bb2a4bd0108237a1a90
 0d15d323bb331d1df68a144bf24b41ed .git/objects/f5/47272d5697302ef5c33d2bb7c77965d053c84f
-0dd179dd1654ecb30a249e7787ff0d7a .git/refs/heads/master
 0e39940e4a1a489a3c6daf808aab4b6a .git/objects/6e/40a9913e070fcae081b2fa4b8952af64558be7
 0e64153923a8f3ace112c350efec3040 .git/objects/55/746e26c02ce366c6289dcb681da1c728c30f59
 0e7448b9e8886147440b69c5cfd0ae6f .git/objects/11/3fc7d13935006b25cf8e40d7dafa4c9647a37b
 0e77e3373d987d017f328eb1cd5649ac .git/objects/8a/b0b7f5f7f1de85bff5e4053a9d46a5e46e2e06
-0e7857c796e04b2c81ee4b01b8bc54c4 WelcomeViewController.podspec
 0f3d591d08b8f1d1ff446b688061636d Example/Pods/LionheartExtensions/Pod/Classes/File.swift
 0fee75bc11e6f47364a05b3fba57ec37 Example/WelcomeViewController/Images.xcassets/Check.imageset/Check@3x.png
 101c8b2597be1c594f06af5c005ae1f5 Example/Pods/Nimble/Sources/NimbleObjectiveC/NMBStringify.h
@@ -41,7 +39,7 @@
 1178c4fabe156c46bd02478bc007fcf5 .git/objects/82/b84bf120fdc07f2afde960067f18589d8bee07
 11a541afcf159baa929fb98e859495fe .git/objects/0f/80d0a1e4d08e97ab66045f7b057069f9b6fed9
 11cc03452e8df4df7c807f0c1ce3a9e0 Example/Pods/Quick/Sources/Quick/Behavior.swift
-11d5096059792d479dc9c2c3d4229aea .git/index
+1259735934346cff001159b4da366bc4 .git/objects/4d/045e1857d2695029819432dbf4e2e1010b12d0
 12d7b7e6f3b49cb62ecdb4ff09ecebb6 .git/objects/f4/eeeb04cb3dd209effa12399b58a0cf6dc915a0
 132a7292a36e6605e112f03ea3920f97 .git/objects/6a/e044be1d8f470f16f953f0472e905653dca4fb
 1482ec452f167a318e3335e1b2a4de45 Example/Pods/LionheartExtensions/Pod/Classes/Core/UIImage+LionheartExtensions.swift
@@ -81,7 +79,7 @@
 220c4a251a86bcafc7ea43bd429c1b91 .git/objects/b0/d35541ec344c18f615ffc2f4032648437d669f
 223aa5d33dbb7210e1d97c14fb946166 Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlBadInstructionException.swift
 22651f81552419e432852c8b5ea268c2 Example/Pods/Nimble/Sources/Nimble/Matchers/MatchError.swift
-227b3a6a0f9248047a6730b7a347edf1 filelist-local
+227b3a6a0f9248047a6730b7a347edf1 filelist
 22ce76b6dfb9dbcdd51bc72c13d1dc35 Example/Pods/Nimble/LICENSE
 231208c0a83fa2a3b1844e3e42f1ee8d Example/Pods/Quick/Sources/Quick/Filter.swift
 238097746940890733babc6bce45969f .git/objects/e6/dc0ad3a4861437980709555737c9c3f488449d
@@ -92,8 +90,10 @@
 2593f719bd36e0587d758c3385bf85fb Example/Pods/Nimble/Sources/NimbleObjectiveC/DSL.m
 25cbba9380d553319a37086140285724 Example/Pods/Nimble/Sources/Nimble/Matchers/PostNotification.swift
 268d002948d6e8021abef55af0ab81c9 .git/objects/3d/d28abda8803384bf6ab43bb82796a3260be508
+26bbd157ef12c9f1b296f1043212b576 filelist-md5
 26c48374322519c2d68a64fbb4746fde .git/objects/81/8319672d91c3c4f3fdf57d6bf2b7b7f83caf14
 26c6118550ed33823efcdda635664884 Example/WelcomeViewController/Images.xcassets/Categories.imageset/Categories@3x.png
+2797d1dc25b474f0ef159460d08408fe WelcomeViewController.podspec
 281da5ce3d672f542516d01d21dad748 Example/Pods/Pods.xcodeproj/xcuserdata/dan.xcuserdatad/xcschemes/Nimble.xcscheme
 283e5a32bf0b12e7467f8c483cc7c9c9 Example/WelcomeViewController/Images.xcassets/AppIcon.appiconset/Contents.json
 284d093a848133cce0b718ef504bc3cc .git/objects/fd/6093efd088c76c388077ab32c4c6ef8781a5cf
@@ -138,6 +138,7 @@
 36ef1f05fdae795fcc9db4ceb1577437 .git/objects/b0/d5b26b284ee992b09840c97f7cf5524f0fdcd0
 37625583559e3bb85bf77c7f5ea965a9 .git/objects/94/bdbf155a62f02ec828d6c3c3390ab4391da3a7
 378b890a675c957db19f34e1cc12ef9b .git/COMMIT_EDITMSG
+37e8f1773c03f6b334a750a50b6c0c28 .git/objects/53/3893a4e190c4c72579eb764b3dbf9cd9e89854
 37f5e24cab8693ca1f711498c7a5768a Example/Pods/FBSnapshotTestCase/FBSnapshotTestCase/Categories/UIImage+Diff.m
 396caf68c257a53b87a95ee2bcfd2228 .DS_Store
 399b4f00ff75034d35c8a12446348152 Example/Pods/Quick/Sources/QuickObjectiveC/DSL/QCKDSL.m
@@ -145,6 +146,7 @@
 3a762938a1cd0290226314e7d3cf68db .git/objects/88/5b2e3ea718fea24b81cc642d06072705d34f29
 3b65c3aee8f33bb00cc39d04961b89ff Example/Pods/LionheartExtensions/Pod/Classes/Core/UIViewController+LionheartExtensions.swift
 3bd162f8e3d927ee560c9f35f19c419b .git/objects/07/4cb20334a279f688fbd3d77079892fd355c6ec
+3bed7682f2e389557079f1ebf4cbc790 .git/refs/heads/master
 3c4381066f828d4ccce3486c152fe112 .git/objects/54/d7dc0a6b82e959d660ab0c71797df6dad1fb7b
 3ce375ca50612c8ecb73bd3ec5d1ed6a Example/Pods/Quick/Sources/QuickObjectiveC/Configuration/QuickConfiguration.h
 3d74e97237fa4ab5a866ea48829187aa .git/objects/4b/dc4e9686098cb9d21fbdcab67a11696d17b921
@@ -157,6 +159,7 @@
 40f84d55de2d64501bbd98d4c8c2d45d Example/Pods/Nimble/Sources/Nimble/Adapters/NMBObjCMatcher.swift
 411e52ed65f96991e846fcc3aba1716c .git/objects/da/4a164c918651cdd1e11dca5cc62c333f097601
 416c291aadaff5325a3a6f66671c6d03 Example/Pods/Pods.xcodeproj/xcuserdata/dan.xcuserdatad/xcschemes/WelcomeViewController.xcscheme
+416f2d337e77bfe97b5ba6fe3e8d70cf .git/objects/85/d3b2b09ce0c7b0330a9677e2389a6475e31963
 4219be3d4b3e1d3f41f61948d8b006a7 .git/objects/94/a9030eb31f81578567967f104ecc037689039d
 427f2ea27703c8b21db238fc0e3d2306 Example/Pods/Nimble/Sources/NimbleObjectiveC/CurrentTestCaseTracker.h
 4313b557b5f1970bfbcdd3916e395e8c .git/objects/9c/86fb7bd7bf11dcacc99df4638e6e179ce075db
@@ -252,6 +255,7 @@
 6b4e5d756cce5c245f1ab9a62c247347 Example/Pods/Nimble-Snapshots/PrettySyntax.swift
 6b5c33c3a491d4e4c39636db9ce66b92 .git/objects/66/71305017d7e6e712cdb8d1d9422e03e9c76988
 6bb829bca0a31ed90dee8b741b274dfb .git/objects/7a/29c7449b9cde275f82af86d92e8d32aacaa0d6
+6c4cccdeba3b420df4c0611b6781dfa3 .git/objects/be/e2221cc44e8530d69d5e7e1f1514adc3d8f45d
 6cca979bd4a31827666c9e06e5229650 Example/Pods/Quick/Sources/Quick/ExampleGroup.swift
 6d1515fbb8e5440a34b88888a5db0bea .git/objects/b3/ae411987a104bb0211ffe31e608b51eea99cd8
 6d8a82ad86d685b1969b9bbdd97a9a9d .git/objects/49/09ce133d1ff9040e16ff727d351146965b52b8
@@ -286,8 +290,6 @@
 7a91687a83351de7b384c9c8ce107950 Example/WelcomeViewController.xcodeproj/xcshareddata/xcschemes/WelcomeViewController-Example.xcscheme
 7adb2a4f28fc77663cb911b6a27a9ffc .git/objects/bc/bdc50982a2f2d4bd0cff00610674a73c28e840
 7b6f757e657aec5c4a6a57443477ea1d Example/Pods/Nimble-Snapshots/XCTestObservationCenter+CurrentTestCaseTracker.m
-7cd9197efee521ee0ae4245474785230 .git/logs/HEAD
-7cd9197efee521ee0ae4245474785230 .git/logs/refs/heads/master
 7cf680598ca14001ee12e0fe57246cd3 .git/objects/6c/5126a41d3c2155005b957621f51d123011bc3a
 7ea6b8e50c2170d77785fc788febb90c Example/Pods/Nimble/Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.h
 7f15f933c7f7ae6ddf15bd125835289b .git/objects/c5/f3152af4695dd1e445a3f2775fbb19abd97218
@@ -295,12 +297,14 @@
 81003ec4d8ff01bffef87fb504dd6214 Example/Pods/LionheartExtensions/Pod/Classes/Core/UIPrintPageRenderer+LionheartExtensions.swift
 8103ef82b42d9795a249b23221f361c4 Example/Pods/Nimble/Sources/Nimble/Matchers/BeAKindOf.swift
 811f3442b8b8a00ae99edf697d92fc44 .git/objects/51/906877a666bb4b15b6138649e34d2b204ba291
+81b72890ecbdebf1b91d3c04d3a56402 .git/refs/remotes/origin/master
+81b72890ecbdebf1b91d3c04d3a56402 .git/refs/tags/0.1.0
+82dcb70d9d8ea006f9ea3903ae54dd96 .git/objects/72/8e1261ec34dc783d407fa1b2cf15ef8001c56b
 82e6e016cf27dc8ee3c7a918184a10c0 .git/objects/6e/fc9302e4c4d7b1bf09a74696ca79288dc87be0
 8359868df63640927ecbe333b8e96ac5 .git/objects/fa/ca5aa33dce06c0e088517f28eaa9ebec082af3
 83a59226e7baf81313c58201909e850f Example/Pods/FBSnapshotTestCase/FBSnapshotTestCase/Categories/UIImage+Diff.h
 83a938ff0812ac03fbd0f31e33da7fb2 .git/objects/16/1a9d30a8b4416b5afec3902bad1ac5436ceaa1
 8483861335b8e6ec70069001ca37546f .git/objects/e2/fffe735f3b4023cdecd4e32cf6cd2cc4c34a60
-85bcffaad40bed7158a5b6ac0ccd826b .git/refs/remotes/origin/master
 866db3bb64e3900731c32d1f6e99319f Example/Pods/Nimble/Sources/Nimble/Adapters/NimbleXCTestHandler.swift
 866ed64e8bd79875968207f5864bb605 Example/Pods/FBSnapshotTestCase/FBSnapshotTestCase/FBSnapshotTestCasePlatform.h
 86a5e9241791d7b4f96b86c7546c4356 .travis.yml
@@ -325,6 +329,7 @@
 8e4d270b1e246f6aac437597c021b645 Example/Pods/Nimble/Sources/Nimble/Matchers/BeLogical.swift
 8f68490cdeb6d20d5f8dd59901399e34 .git/objects/f3/7d6db242aafca6665464ab691e36f1818ec7e9
 8f951794593b5d24b9900d8c870426b3 Example/Pods/Nimble-Snapshots/DynamicType/HaveValidDynamicTypeSnapshot.swift
+901f74eecaba6670920ec9589f33b3d6 .git/index
 9049ea74a33ed472be9f071cf1209a15 .git/objects/e1/b54323669fe3d097073f7bc0f0d78f29fd00fc
 90a38b1467a75c0ce513fb27fa207b3a .git/objects/9c/7d3106bea165fb3eed3dbd5970d13f3c8d08b2
 90a7b869331830e5eb446e83bcdbce0e .git/objects/8c/6fce5b9f0e463293a7b6a07d29717569f68980
@@ -352,6 +357,8 @@
 9a4216bb85e0e30496574877a672670a Example/WelcomeViewController/Images.xcassets/Categories.imageset/Contents.json
 9a4e0a8e2a79d6fa73e251be7b8eca2b .git/objects/e9/c47c44543240dd5a3cafb2ddf83892e52a83b0
 9ade001e1b4cdbd3179d8b06bff4c3a5 Example/Pods/Nimble-Snapshots/DynamicType/PrettyDynamicTypeSyntax.swift
+9b73ab686b6ed2074d6abdb1a3ff50d4 .git/logs/HEAD
+9b73ab686b6ed2074d6abdb1a3ff50d4 .git/logs/refs/heads/master
 9bdbf31ee5b2f7107428c35f1bfacfd1 .git/objects/0a/d85909b936574c87a087ec06b9ade14fe33351
 9bf14bc1c967d7b395d1b848684c3ce9 .git/objects/5d/5268f8396114058e97ac0b1ff3e265ab36f251
 9c5375e04db32cb2e16559ce3bc88c79 .git/objects/e9/001655933ec5fba9a1acfa26dbb6288416b052
@@ -369,6 +376,7 @@ a030a8ff7335904627e3b4ed36192e25 Example/Pods/Nimble/Sources/Nimble/Utils/Functi
 a0890bccbbbc55a167d3c993852e4187 meta/repo-banner-bottom.png
 a0a67566758947084bf09d9496b95bd0 .git/objects/0d/153c0c9abb4f3d21e4e6224386c777847ad9e1
 a0dd7a25b07bb4932cc0c012536527e3 Example/Pods/Quick/Sources/Quick/Example.swift
+a1787e914e9c51e1aeeb78518998eb66 filelist-local
 a198645abb809fd1fd53604d094f0eda .git/objects/bb/72df628d974e9c1c83580f08448599c0561fb4
 a1b639237e1ce7fb161d54570452a3d3 .git/objects/f5/e371112d0ae679a817230484a30301214492dd
 a219ade1ebc83962d93f8dd14fb11235 .git/objects/0f/e76a72d6b15564a88d33c0f2876472f06d9af9
@@ -399,6 +407,7 @@ aad5c0ff587c204d197244a70e8293bc .git/objects/55/e9cecb25c3a70d978ecb713f38d8c0f
 ab3cafe80847454f388b9a20bb751a9e .git/objects/d8/4053fe54a561147bc4deeb0fa5fd88703b418d
 ab5f20dcd5b558888db7d80b0f979f8a .git/objects/d5/64d0bc3dd917926892c55e3706cc116d5b165e
 ac8f8510a55652792a491b6edbe89aaf .git/objects/8c/f414fd55713f44f81d994592f9280a7c7daabb
+ac918c948d8b5927055552abde7f418f .git/logs/refs/remotes/origin/master
 ace1579e4cda7c9557c8eb42a508802e .git/objects/f9/dbedda85def9fb9447e2798ecbd7539a9a625d
 acf4458d5bd94cc1e7a745c74b896484 Example/Pods/Nimble/Sources/NimbleObjectiveC/XCTestObservationCenter+Register.m
 ad17a440782cdd0def98cce56eb4fdd2 .git/objects/c5/13b52713c3ad0e113d14ce2d8ea00c3cf2a293
@@ -443,6 +452,7 @@ bd45ef01e0c77be7dfd9ad0dd4d99088 .git/objects/a3/b8524549da05f0921f0d0dbe5eb5bbc
 bd54c2df0a026418aac756d66c92e250 .git/objects/70/c5661551193aa36206ec4607297d1e6774515f
 bdbb18899bd3a6d603b596d521c52388 .git/objects/48/9167973bbdb22390162851fb00cd823411bc92
 bdf928bed626af222bf483b15bf61e97 Example/Pods/Nimble/Sources/Nimble/Utils/Stringers.swift
+be7e84c09ed795865d73cc82a6c756c3 .git/objects/68/e8f59d67d03584aaddbf4245db3410c7389029
 bea20d58195ca69669a7c78e95fae8f8 Example/Pods/Quick/Sources/Quick/QuickTestSuite.swift
 befeb4a5676ae6cc7becd3b277149ac0 Example/Pods/Quick/Sources/Quick/DSL/DSL.swift
 bf992fb45c7af4c28fabaf86d9305578 .git/objects/79/eb4fda4002420fe1c6b776392bf66d074e0055
@@ -495,10 +505,12 @@ d0e25127ad61041f11e517605966c667 Example/Pods/FBSnapshotTestCase/FBSnapshotTestC
 d1dc079ef67806de7bb4166a17817416 .git/objects/99/ea5134bc9ea7e191700bad8def2bada1a97fee
 d29af0e94e55bff4efea8cc29c6f8a67 .git/objects/e4/8d164ed87950f965cd70e4edf204c2dec6eed2
 d352b7dffeefe2bcf9b4bb2fcc868e49 .git/objects/d8/c6c2e07d4af3a570d397381e63c6470a77a9ec
+d36a43202df0d9ed8219bd0660c8fe9f .git/objects/b5/9acaeba303d37feb7a3d379c9365c5bc67222c
 d40b5cf1c8211c0a08887947cb9f695a .git/hooks/post-commit
 d40b5cf1c8211c0a08887947cb9f695a .git/hooks/post-merge
 d41d8cd98f00b204e9800998ecf8427e WelcomeViewController/Assets/.gitkeep
 d41d8cd98f00b204e9800998ecf8427e WelcomeViewController/Classes/.gitkeep
+d41d8cd98f00b204e9800998ecf8427e filelist-local-md5
 d43153871bc40890ee7d51c81b4507a2 .git/objects/01/551979174ac8506737590d70c60aad21f63a26
 d460963e61e0c44e1c44ad9fdcd845ba .git/objects/87/dad100a54fe5a8590d48352fec2ff31d4f7efa
 d4c6dfca6c75ca811f434ac14c7c3efc .git/objects/e8/6fa4ad335360bd115d6e8c2171d1fa1b13db05

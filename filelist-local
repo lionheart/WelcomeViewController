@@ -107,6 +107,7 @@
 .git/objects/4b/95384d42004af22b631e92af4e6f593bc754f6
 .git/objects/4b/dc4e9686098cb9d21fbdcab67a11696d17b921
 .git/objects/4c/2b496809e898f66948545939bd6372c6d10e61
+.git/objects/4d/045e1857d2695029819432dbf4e2e1010b12d0
 .git/objects/4e/37aefad30d491aa59388868442806c824f1ec8
 .git/objects/4e/6bc64b022e1258101750340a4b3f9a3626ea43
 .git/objects/4e/941fec54af3045a23997f6b772b0c3d24d3d0f
@@ -118,7 +119,9 @@
 .git/objects/52/3e870339bad93a1edb0edc36c95da575cc129d
 .git/objects/52/4902782de2d1ebf773753828b2e06080805882
 .git/objects/52/e53ae182b9a44ed073baec977bb4bd0ed4c5c7
+.git/objects/53/3893a4e190c4c72579eb764b3dbf9cd9e89854
 .git/objects/54/0b51035601349c709161561b22cd7c58374d02
+.git/objects/54/562806ca99693cfde3f584b29aecb48208a420
 .git/objects/54/6e620dc39cd9fadb8632e442b18a8955e1e158
 .git/objects/54/9fc70c4050ef73a1bd263eb69409048046eee0
 .git/objects/54/c6bf2de012054dfbcdf41ad5b61c6e2821b0d1
@@ -144,6 +147,7 @@
 .git/objects/65/4d108e2f1957157d1ec4065954c7d674a4b5aa
 .git/objects/65/a4324435c0b3313f774e13d52f37d1220d7e6f
 .git/objects/66/71305017d7e6e712cdb8d1d9422e03e9c76988
+.git/objects/68/e8f59d67d03584aaddbf4245db3410c7389029
 .git/objects/69/47ada7ad81f1ea7bb257dccd0f61ce22b0551d
 .git/objects/69/64aede6b9a1fe06b11940b8cd12e35ac183f97
 .git/objects/6a/e044be1d8f470f16f953f0472e905653dca4fb
@@ -155,6 +159,7 @@
 .git/objects/6f/77009ec5c0ba164a85f46635ac7d2a0176d509
 .git/objects/70/06c9eeb28fdcb9f0aab47b53b14a1b5de40dc7
 .git/objects/70/c5661551193aa36206ec4607297d1e6774515f
+.git/objects/72/8e1261ec34dc783d407fa1b2cf15ef8001c56b
 .git/objects/72/abc3c005a4f00b22182d29daf82cc84b3b777f
 .git/objects/73/37fe45acea3574dfd55b5cf28c63b1b9f66a5f
 .git/objects/73/3c5644fc9db245e94e9329368fc3b3d659977c
@@ -180,6 +185,7 @@
 .git/objects/83/494d0d49717a3245371ca16599bf77e9caa174
 .git/objects/83/5a8cc7d13e5ca5c09adc4c47d997dd48332261
 .git/objects/83/f320108c9804a0cd612526cc378ef3b07ac413
+.git/objects/85/d3b2b09ce0c7b0330a9677e2389a6475e31963
 .git/objects/87/17f97d897532f6d9ddc828366e4ab4292e57b6
 .git/objects/87/2ca5c2ec4d237a0900300e74d29aefd8b4b707
 .git/objects/87/bf80d8a840326e5928fb987a77985a57047425
@@ -257,6 +263,7 @@
 .git/objects/b3/c0be9eff4dbef314d38039da95e0c741160c48
 .git/objects/b4/f8c5b127fbdf331eea5d81662f458e0321b2d7
 .git/objects/b5/6d50865054641bb20b44be74fe90f7049e8fbc
+.git/objects/b5/9acaeba303d37feb7a3d379c9365c5bc67222c
 .git/objects/b6/78863957495c4ae58ccd8b0343557b3c5d66d9
 .git/objects/b7/d514fe60e7db8345a197560e21acbadd79b21e
 .git/objects/b8/2536f6eef804a790f0b1543b3a86afdabd14d9
@@ -273,6 +280,7 @@
 .git/objects/bc/6a254eafa97f4bb3f1570f95f88a3b7002cc6f
 .git/objects/bc/bdc50982a2f2d4bd0cff00610674a73c28e840
 .git/objects/be/b2a2441835aeaf9ee2ba30c557a8f2b6e4363f
+.git/objects/be/e2221cc44e8530d69d5e7e1f1514adc3d8f45d
 .git/objects/c0/0ce3a96c8afa7ecd8afa09d2b7c26601e6204b
 .git/objects/c0/81064730855320afc481cda4a4ab67d7b8a0c1
 .git/objects/c0/aaea480e509dd3c3674de325ff11872e07efe0
@@ -374,6 +382,7 @@
 .git/objects/ff/ef64887a7177fc11bedda097dea706bcb83c40
 .git/refs/heads/master
 .git/refs/remotes/origin/master
+.git/refs/tags/0.1.0
 .gitignore
 .travis.yml
 Example/Podfile
@@ -655,7 +664,10 @@ WelcomeViewController/Classes/WelcomeCardView.swift
 WelcomeViewController/Classes/WelcomeViewController.swift
 WelcomeViewController/Protocols/WelcomeCardProvider.swift
 bump_version.sh
+filelist
 filelist-local
+filelist-local-md5
+filelist-md5
 generate_docs.sh
 meta/header.sketch
 meta/repo-banner-bottom.png
