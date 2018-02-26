@@ -20,6 +20,7 @@
 .git/objects/06/f49b1dc874e77acc7ea45d297c5eb4ea4669da
 .git/objects/07/4cb20334a279f688fbd3d77079892fd355c6ec
 .git/objects/07/b8a4c9be429f4935823ec70ce4499347d87efb
+.git/objects/09/f8926f7411e3e31189843612ea8ad809da8359
 .git/objects/0a/d85909b936574c87a087ec06b9ade14fe33351
 .git/objects/0c/8dd878b866a6eaff2d060c9f3d27d4a6d7b78d
 .git/objects/0d/153c0c9abb4f3d21e4e6224386c777847ad9e1
@@ -45,6 +46,7 @@
 .git/objects/1c/19c9e97db470839f00f4517f279a72f6b68021
 .git/objects/1c/2a17ebde7fbe20bafff8d4e7542183d4f837ba
 .git/objects/1d/12b2153af1bd2bd8e73663dd1d0afb3a87a962
+.git/objects/1d/62af49906013875f33518ab994d10e06c20973
 .git/objects/1d/98702e026840f269976fcd0fbeebdf8aa59406
 .git/objects/1d/e6bf35e7139f59c8ef60ea03a7d5968437f96d
 .git/objects/1e/5762f690daf1a9a05f07c02b4bbfee04a16ba0
@@ -52,6 +54,7 @@
 .git/objects/20/f78dff38b9cb1a7549db08074f3e68399536e1
 .git/objects/21/1540cb64b0b44e81958ecebc47ee5b302bc872
 .git/objects/22/43fe6e27dc60546f37eca17f97ed75802d224f
+.git/objects/23/b2ae8fc0e73237157d2db92a71b595fa92b5ee
 .git/objects/23/c4781e0440af0a8e610e404d16e2a0b0e8e7e9
 .git/objects/24/401582e5d14ecb5459e1903929232541af98db
 .git/objects/25/002f9f8e24c1700e402226e8cb1a86102e95f2
@@ -93,6 +96,7 @@
 .git/objects/41/5b6806b6558f6f49383ae35b2032800af23fbd
 .git/objects/42/1b7131b2ffb09e0a5b71246dc467d281842359
 .git/objects/43/5772fd30ce43d752801b2f3b20503a31f91761
+.git/objects/43/7459cd94c9fa59d82c61c0bc8aa36e293b735e
 .git/objects/44/9cbfcc4bf5b079840b6da56c35553c03f86473
 .git/objects/45/b74ece8de813d3ccf205a2cdaf9dab4186982e
 .git/objects/47/1bb0df8241cd0a67f43c83e5aac5ea225a6f6d
@@ -141,10 +145,12 @@
 .git/objects/5d/5268f8396114058e97ac0b1ff3e265ab36f251
 .git/objects/5f/fcb4ff5d3f6d4c0b2ec14c932f9ec9b24852fd
 .git/objects/60/553bda81db1349d843a3a830ff431c6e01d797
+.git/objects/60/5550f253c36e85b9d18afc7cff72077647e492
 .git/objects/63/75f2fc13ac209c0b958bf471ce5b7e86a5aa9c
 .git/objects/64/061506579cccee80516c58577ea203b0ad9199
 .git/objects/65/1bd44a9530fc2bfbd51653476c6a48bb637a44
 .git/objects/65/4d108e2f1957157d1ec4065954c7d674a4b5aa
+.git/objects/65/9fe70290da24f7aa4ec377c1be0c15cb78b111
 .git/objects/65/a4324435c0b3313f774e13d52f37d1220d7e6f
 .git/objects/66/71305017d7e6e712cdb8d1d9422e03e9c76988
 .git/objects/68/e8f59d67d03584aaddbf4245db3410c7389029
@@ -200,6 +206,7 @@
 .git/objects/8a/b0b7f5f7f1de85bff5e4053a9d46a5e46e2e06
 .git/objects/8a/ffa62ea1d186c06e910570582b2efdb40fa1e1
 .git/objects/8c/6fce5b9f0e463293a7b6a07d29717569f68980
+.git/objects/8c/bb1948a0c7aa793018ce68f60f0ed30ebaf5a7
 .git/objects/8c/f414fd55713f44f81d994592f9280a7c7daabb
 .git/objects/8d/99d5ebea622d7a63305acd7264f5a3d5046655
 .git/objects/8e/21c30c133b19ae0597610557d9a2b5dce59ea6
@@ -224,6 +231,7 @@
 .git/objects/99/ea5134bc9ea7e191700bad8def2bada1a97fee
 .git/objects/9b/a2ffac6c2e788209c9a48d1005c085a788c123
 .git/objects/9b/e37583cd0fa523dd77c8d4f4faf2e820ac533b
+.git/objects/9c/1d98a7ab94fa630975751ad93319cc5bed9c10
 .git/objects/9c/7d3106bea165fb3eed3dbd5970d13f3c8d08b2
 .git/objects/9c/86fb7bd7bf11dcacc99df4638e6e179ce075db
 .git/objects/9d/473e2027ec7760d0bfc181388590f7235369b7
@@ -350,6 +358,7 @@
 .git/objects/ee/fe11bae3ac4c6c25dc8d951dcbb7d20dd24a2f
 .git/objects/ef/73762fa404f529c620641c81e0c7cd1a7b6d21
 .git/objects/ef/f61cdbcbe30cbab0d61d351d44888728d06063
+.git/objects/f0/b1c43892040d98ac274821c51490bbdd80c37f
 .git/objects/f1/9f330440270922b04b0931442fd3aefc5153ce
 .git/objects/f1/afb72df92f7a3dd2e71f42d86619dbe6d36a86
 .git/objects/f2/14a135383cdf1cac0edabaf06a85c556ecb4aa
@@ -384,6 +393,7 @@
 .git/refs/remotes/origin/master
 .git/refs/tags/0.1.0
 .gitignore
+.ruby-version
 .travis.yml
 Example/Podfile
 Example/Podfile.lock
@@ -654,6 +664,8 @@ Example/WelcomeViewController/Images.xcassets/Preview.imageset/Preview@2x.png
 Example/WelcomeViewController/Images.xcassets/Preview.imageset/Preview@3x.png
 Example/WelcomeViewController/Info.plist
 Example/WelcomeViewController/ViewController.swift
+Gemfile
+Gemfile.lock
 LICENSE
 README.md
 WelcomeViewController.podspec
