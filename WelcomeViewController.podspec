@@ -1,43 +1,25 @@
-#
-# Be sure to run `pod lib lint WelcomeViewController.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
+# vim: ft=ruby
 
 Pod::Spec.new do |s|
   s.name             = 'WelcomeViewController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WelcomeViewController.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = "A welcome view in the style of Apple's built-in apps."
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A view controller that lets you quickly and easily summarize your app's functionality.
                        DESC
 
-  s.homepage         = 'https://github.com/Dan Loewenherz/WelcomeViewController'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Dan Loewenherz' => 'dan@lionheartsw.com' }
-  s.source           = { :git => 'https://github.com/Dan Loewenherz/WelcomeViewController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage         = 'https://github.com/lionheart/WelcomeViewController'
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
+  s.author           = { "Dan Loewenherz" => 'dan@lionheartsw.com' }
+  s.source           = { :git => 'https://github.com/lionheart/WelcomeViewController.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/lionheartsw'
 
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'WelcomeViewController/Classes/**/*', 'WelcomeViewController/Protocols/**/*'
-  
-  # s.resource_bundles = {
-  #   'WelcomeViewController' => ['WelcomeViewController/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   s.dependency 'SuperLayout', '~> 1.0'
   s.dependency 'LionheartExtensions', '~> 3.0'
 end
