@@ -1,0 +1,46 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - LionheartExtensions (3.11.1):
+    - LionheartExtensions/Core (= 3.11.1)
+  - LionheartExtensions/Core (3.11.1)
+  - Nimble (7.0.3)
+  - Nimble-Snapshots (6.3.0):
+    - Nimble-Snapshots/Core (= 6.3.0)
+  - Nimble-Snapshots/Core (6.3.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble (~> 7.0)
+  - Quick (1.2.0)
+  - SuperLayout (1.0.0):
+    - SuperLayout/Core (= 1.0.0)
+  - SuperLayout/Core (1.0.0)
+  - WelcomeViewController (0.1.0):
+    - LionheartExtensions (~> 3.0)
+    - SuperLayout (~> 1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - Nimble (~> 7.0.2)
+  - Nimble-Snapshots (~> 6.3.0)
+  - Quick (~> 1.2.0)
+  - WelcomeViewController (from `../`)
+
+EXTERNAL SOURCES:
+  WelcomeViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  LionheartExtensions: 9cfc42c9a717f7bfef4eb23f909142f63c3df167
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SuperLayout: 1c273e339a8f0b98ee33f5504e1a81a95108d7fd
+  WelcomeViewController: 951e0019a645998b17ffa255ee38f2d2c626d08a
+
+PODFILE CHECKSUM: 174a649aa224324c0f8dd4c3e48d5442e1e6e1b9
+
+COCOAPODS: 1.4.0

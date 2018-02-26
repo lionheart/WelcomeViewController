@@ -44,9 +44,9 @@
 		8D35DDCF9A2E337C8EC799A4 /* Pods-WelcomeViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelcomeViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WelcomeViewController_Example/Pods-WelcomeViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9C86D3EAC3A55CD6097405BE /* Pods_WelcomeViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WelcomeViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB0AE6A6C58FB3E9E980F81 /* Pods-WelcomeViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelcomeViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WelcomeViewController_Example/Pods-WelcomeViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A210FD8FA9B4E971E97CEF5F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		AB8562A8965C361182F0F54A /* WelcomeViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WelcomeViewController.podspec; path = ../WelcomeViewController.podspec; sourceTree = "<group>"; };
-		BA758FBD654DEBAB10F735B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A210FD8FA9B4E971E97CEF5F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AB8562A8965C361182F0F54A /* WelcomeViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WelcomeViewController.podspec; path = ../WelcomeViewController.podspec; sourceTree = "<group>"; };
+		BA758FBD654DEBAB10F735B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 63553QQ62F;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 63553QQ62F;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -319,10 +321,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WelcomeViewController_Example/Pods-WelcomeViewController_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LionheartExtensions/LionheartExtensions.framework",
+				"${BUILT_PRODUCTS_DIR}/SuperLayout/SuperLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/WelcomeViewController/WelcomeViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LionheartExtensions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SuperLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WelcomeViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -513,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -526,6 +532,7 @@
 			baseConfigurationReference = 9DB0AE6A6C58FB3E9E980F81 /* Pods-WelcomeViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 63553QQ62F;
 				INFOPLIST_FILE = WelcomeViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -541,6 +548,7 @@
 			baseConfigurationReference = 8D35DDCF9A2E337C8EC799A4 /* Pods-WelcomeViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 63553QQ62F;
 				INFOPLIST_FILE = WelcomeViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -555,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1144ED53FE0FA85EC9834E44 /* Pods-WelcomeViewController_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 63553QQ62F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -576,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32AFBF11EDF140E499F22F22 /* Pods-WelcomeViewController_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 63553QQ62F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
