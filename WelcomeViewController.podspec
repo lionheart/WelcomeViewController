@@ -22,4 +22,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit'
   s.dependency 'SuperLayout', '~> 1.0'
   s.dependency 'LionheartExtensions', '~> 3.0'
+  s.swift_version = '4.0'
 end
