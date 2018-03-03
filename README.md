@@ -7,8 +7,12 @@
 [![Version][version-badge]][cocoapods-repo-url]
 [![License][license-badge]][cocoapods-repo-url]
 [![Platform][platform-badge]][cocoapods-repo-url]
+[![Swift][swift-badge]][swift-url]
+
+<!--
 [![CocoaPods][downloads-badge]][cocoapods-repo-url]
 [![CocoaPods][downloads-monthly-badge]][cocoapods-repo-url]
+-->
 
 ## Example
 
@@ -40,6 +44,7 @@ WelcomeViewController is available under the Apache 2.0 license. See the [LICENS
 [platform-badge]: https://img.shields.io/cocoapods/p/WelcomeViewController.svg?style=flat
 [downloads-badge]: https://img.shields.io/cocoapods/dt/WelcomeViewController.svg?style=flat
 [downloads-monthly-badge]: https://img.shields.io/cocoapods/dm/WelcomeViewController.svg?style=flat
+[swift-badge]: https://img.shields.io/badge/swift-3,_4-blue.svg
 
 <!-- Links -->
 
@@ -49,4 +54,5 @@ WelcomeViewController is available under the Apache 2.0 license. See the [LICENS
 [cocoapods-repo-url]: http://cocoapods.org/pods/WelcomeViewController
 [doc-url]: https://code.lionheart.software/WelcomeViewController/
 [lionheart-url]: https://lionheartsw.com/
+[swift-url]: https://swift.org
 
