@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/dan/Projects/WelcomeViewController/WelcomeViewController/Classes/WelcomeViewController.swift",
+      "line": 10,
+      "symbol": "WelcomeViewControllerDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Projects/WelcomeViewController/WelcomeViewController/Classes/WelcomeViewController.swift",
+      "line": 11,
+      "symbol": "WelcomeViewControllerDelegate.welcomeViewControllerButtonDidTouchUpInside(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Projects/WelcomeViewController/WelcomeViewController/Classes/WelcomeViewController.swift",
+      "line": 14,
+      "symbol": "WelcomeViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Projects/WelcomeViewController/WelcomeViewController/Classes/WelcomeViewController.swift",
+      "line": 20,
+      "symbol": "WelcomeViewController.init(header:buttonText:callouts:delegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Projects/WelcomeViewController/WelcomeViewController/Classes/WelcomeViewController.swift",
+      "line": 32,
+      "symbol": "WelcomeViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Projects/WelcomeViewController/WelcomeViewController/Classes/WelcomeViewController.swift",
+      "line": 36,
+      "symbol": "WelcomeViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/dan/Projects/WelcomeViewController/WelcomeViewController/Protocols/WelcomeCardProvider.swift",
+      "line": 10,
+      "symbol": "WelcomeCardProvider",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/dan/Projects/WelcomeViewController"
+}
