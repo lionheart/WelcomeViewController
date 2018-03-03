@@ -28,7 +28,7 @@ pod 'WelcomeViewController'
 
 ## License
 
-LionheartExtensions is available under the Apache 2.0 license. See the [LICENSE](LICENSE) file for more info.
+WelcomeViewController is available under the Apache 2.0 license. See the [LICENSE](LICENSE) file for more info.
 
 <!-- Images -->
 
