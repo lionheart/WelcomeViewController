@@ -15,9 +15,9 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
     var header: String?
     var buttonText: String?
     var calloutViews: [WelcomeCardView<T>] = []
-    weak var delegate: WelcomeViewControllerDelegate!
+    weak var delegate: WelcomeViewControllerDelegate?
     
-    public init(header: String?, buttonText: String?, callouts: [T], delegate: WelcomeViewControllerDelegate) {
+    public init(header: String?, buttonText: String?, callouts: [T], delegate: WelcomeViewControllerDelegate?) {
         super.init(nibName: nil, bundle: nil)
         
         self.header = header
@@ -40,14 +40,18 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         
         let title = UILabel()
         title.translatesAutoresizingMaskIntoConstraints = false
-        title.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        var descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .largeTitle)
+        descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits: [UIFontDescriptor.TraitKey.weight: UIFont.Weight.heavy]])
+        
+        title.font = UIFont(descriptor: descriptor, size: descriptor.pointSize)
         title.text = header
+        title.numberOfLines = 0
         
         let scroll = UIScrollView()
         scroll.translatesAutoresizingMaskIntoConstraints = false
         scroll.alwaysBounceVertical = true
         scroll.contentInset = UIEdgeInsets(top: 48, left: 8, bottom: 0, right: 8)
-        
+
         let stackView = UIStackView(arrangedSubviews: calloutViews)
         stackView.axis = .vertical
         stackView.spacing = 32
@@ -57,8 +61,10 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         button.setTitle2(buttonText, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         
-        let selector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerButtonDidTouchUpInside(_:))
-        button.addTarget(delegate, action: selector, for: .touchUpInside)
+        if let delegate = delegate {
+            let selector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerButtonDidTouchUpInside(_:))
+            button.addTarget(delegate, action: selector, for: .touchUpInside)
+        }
         
         scroll.addSubview(stackView)
         
@@ -68,10 +74,12 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         
         let margins = view.layoutMarginsGuide
         title.topAnchor ~~ margins.topAnchor + 32
+        title.leadingAnchor ≥≥ margins.leadingAnchor
+        title.trailingAnchor ≤≤ margins.trailingAnchor
         title.centerXAnchor ~~ view.centerXAnchor
         
-        scroll.leadingAnchor ~~ margins.leadingAnchor
-        scroll.trailingAnchor ~~ margins.trailingAnchor
+        scroll.leadingAnchor ~~ margins.leadingAnchor + 16
+        scroll.trailingAnchor ~~ margins.trailingAnchor - 16
         scroll.topAnchor ~~ title.bottomAnchor
         scroll.bottomAnchor ~~ button.topAnchor - 16
         

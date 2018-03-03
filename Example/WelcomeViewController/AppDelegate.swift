@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegateWithWindow {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        rootViewController = WelcomeViewController<WelcomeItem>(header: "Welcome to the TV app.", buttonText: "Continue", callouts: [.library, .watchNow, .store])
+        rootViewController = WelcomeViewController<WelcomeItem>(header: "Welcome to the TV app.", buttonText: "Continue", callouts: [.library, .watchNow, .store], delegate: nil)
         return true
     }
 }
