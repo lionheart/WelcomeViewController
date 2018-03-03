@@ -14,6 +14,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![](meta/screenshot.png)
+
 ## Installation
 
 WelcomeViewController is available through [CocoaPods][cocoapods-url]. To install it, simply add the following line to your Podfile:
