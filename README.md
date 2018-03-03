@@ -14,7 +14,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-![](meta/screenshot.png)
+<img src="meta/screenshot.png" height="207" width="368" />
 
 ## Installation
 
