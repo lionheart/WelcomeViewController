@@ -83,7 +83,7 @@
 <a href="http://cocoapods.org/pods/WelcomeViewController"><img src="https://img.shields.io/cocoapods/v/WelcomeViewController.svg?style=flat" alt="Version"></a>
 <a href="http://cocoapods.org/pods/WelcomeViewController"><img src="https://img.shields.io/cocoapods/l/WelcomeViewController.svg?style=flat" alt="License"></a>
 <a href="http://cocoapods.org/pods/WelcomeViewController"><img src="https://img.shields.io/cocoapods/p/WelcomeViewController.svg?style=flat" alt="Platform"></a>
-<a href="https://swift.org"><img src="https://img.shields.io/badge/swift-3,_4-blue.svg" alt="Swift"></a></p>
+<a href="https://swift.org"><img src="https://img.shields.io/badge/swift-4-blue.svg" alt="Swift"></a></p>
 
 <!--
 [![CocoaPods][downloads-badge]][cocoapods-repo-url]
@@ -94,6 +94,59 @@
 <p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
 
 <p><img src="meta/screenshot.png" height="736px" width="414px" /></p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Create an enum with all of the features you&rsquo;d like to summarize:</p>
+<pre class="highlight plaintext"><code>enum WelcomeItem {
+    case library
+    case watchNow
+    case store
+}
+</code></pre>
+
+<p>Make the enum conform to <code><a href="Protocols/WelcomeCardProvider.html">WelcomeCardProvider</a></code>.</p>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">WelcomeItem</span><span class="p">:</span> <span class="kt">WelcomeCardProvider</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="k">self</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">library</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Library"</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">watchNow</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Watch Now"</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">store</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Store"</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="k">self</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">library</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Find your purchases and rentals in one convenient place."</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">watchNow</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Start watching the TV shows and mvoies you love from all your supported apps."</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">store</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Get supported apps, discover new movie releases, and find popular TV shows."</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">imageName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="k">self</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">library</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Categories"</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">watchNow</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Preview"</span>
+        <span class="k">case</span> <span class="o">.</span><span class="nv">store</span><span class="p">:</span> <span class="k">return</span> <span class="s">"Check"</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">UIColor</span><span class="p">(</span><span class="o">.</span><span class="kt">RGB</span><span class="p">(</span><span class="mi">37</span><span class="p">,</span> <span class="mi">185</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>Lastly, instantiate <code><a href="Classes/WelcomeViewController.html">WelcomeViewController</a></code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">controller</span> <span class="o">=</span> <span class="kt">WelcomeViewController</span><span class="o">&lt;</span><span class="kt">WelcomeItem</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">header</span><span class="p">:</span> <span class="s">"Welcome to the TV app."</span><span class="p">,</span> <span class="nv">buttonText</span><span class="p">:</span> <span class="s">"Continue"</span><span class="p">,</span> <span class="nv">callouts</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">library</span><span class="p">,</span> <span class="o">.</span><span class="n">watchNow</span><span class="p">,</span> <span class="o">.</span><span class="n">store</span><span class="p">],</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre>
+
+<p>To attach an action when someone taps the button, set the <code>delegate</code> to an object conforming to <code><a href="Protocols/WelcomeViewControllerDelegate.html">WelcomeViewControllerDelegate</a></code>.</p>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MyViewController</span><span class="p">:</span> <span class="kt">WelcomeViewControllerDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">welcomeViewControllerButtonDidTouchUpInside</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">dismiss</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
 <h2 id='installation' class='heading'>Installation</h2>
 
 <p>WelcomeViewController is available through <a href="http://cocoapods.org">CocoaPods</a>. To install it, simply add the following line to your Podfile:</p>
