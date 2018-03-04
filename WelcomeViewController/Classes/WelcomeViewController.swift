@@ -65,7 +65,7 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
             let selector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerButtonDidTouchUpInside(_:))
             button.addTarget(delegate, action: selector, for: .touchUpInside)
         }
-        
+
         scroll.addSubview(stackView)
         
         view.addSubview(title)

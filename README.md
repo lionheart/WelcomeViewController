@@ -20,6 +20,68 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 <img src="meta/screenshot.png" height="736px" width="414px" />
 
+## Usage
+
+Create an enum with all of the features you'd like to summarize:
+
+```
+enum WelcomeItem {
+    case library
+    case watchNow
+    case store
+}
+```
+
+Make the enum conform to `WelcomeCardProvider`.
+
+```swift
+extension WelcomeItem: WelcomeCardProvider {
+    var title: String {
+        switch self {
+        case .library: return "Library"
+        case .watchNow: return "Watch Now"
+        case .store: return "Store"
+        }
+    }
+
+    var description: String {
+        switch self {
+        case .library: return "Find your purchases and rentals in one convenient place."
+        case .watchNow: return "Start watching the TV shows and mvoies you love from all your supported apps."
+        case .store: return "Get supported apps, discover new movie releases, and find popular TV shows."
+        }
+    }
+
+    var imageName: String? {
+        switch self {
+        case .library: return "Categories"
+        case .watchNow: return "Preview"
+        case .store: return "Check"
+        }
+    }
+
+    var color: UIColor? {
+        return UIColor(.RGB(37, 185, 255))
+    }
+}
+```
+
+Lastly, instantiate `WelcomeViewController`:
+
+```swift
+let controller = WelcomeViewController<WelcomeItem>(header: "Welcome to the TV app.", buttonText: "Continue", callouts: [.library, .watchNow, .store], delegate: nil)
+```
+
+To attach an action when someone taps the button, set the `delegate` to an object conforming to `WelcomeViewControllerDelegate`.
+
+```swift
+extension MyViewController: WelcomeViewControllerDelegate {
+    func welcomeViewControllerButtonDidTouchUpInside(_ sender: Any) {
+        dismiss(animated: true)
+    }
+}
+```
+
 ## Installation
 
 WelcomeViewController is available through [CocoaPods][cocoapods-url]. To install it, simply add the following line to your Podfile:

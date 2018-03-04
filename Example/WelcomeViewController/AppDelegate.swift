@@ -32,7 +32,7 @@ extension WelcomeItem: WelcomeCardProvider {
         case .store: return "Get supported apps, discover new movie releases, and find popular TV shows."
         }
     }
-    
+
     var imageName: String? {
         switch self {
         case .library: return "Categories"
