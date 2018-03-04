@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WelcomeViewController'
-  s.version          =  "0.1.3"
+  s.version          =  "0.1.4"
   s.summary          = "A welcome view to quickly introduce users to your app."
 
   s.description      = <<-DESC
