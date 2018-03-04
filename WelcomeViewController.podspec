@@ -3,10 +3,10 @@
 Pod::Spec.new do |s|
   s.name             = 'WelcomeViewController'
   s.version          =  "0.1.3"
-  s.summary          = "A welcome view in the style of Apple's built-in apps."
+  s.summary          = "A welcome view to quickly introduce users to your app."
 
   s.description      = <<-DESC
-  A view controller that lets you quickly and easily summarize your app's functionality.
+  A welcome view that lets you quickly introduce users to your app.
                        DESC
 
   s.homepage         = 'https://github.com/lionheart/WelcomeViewController'

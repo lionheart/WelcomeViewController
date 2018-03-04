@@ -44,7 +44,7 @@ WelcomeViewController is available under the Apache 2.0 license. See the [LICENS
 [platform-badge]: https://img.shields.io/cocoapods/p/WelcomeViewController.svg?style=flat
 [downloads-badge]: https://img.shields.io/cocoapods/dt/WelcomeViewController.svg?style=flat
 [downloads-monthly-badge]: https://img.shields.io/cocoapods/dm/WelcomeViewController.svg?style=flat
-[swift-badge]: https://img.shields.io/badge/swift-3,_4-blue.svg
+[swift-badge]: https://img.shields.io/badge/swift-4-blue.svg
 
 <!-- Links -->
 
