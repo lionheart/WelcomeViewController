@@ -1,7 +1,7 @@
 author: "Lionheart Software"
 author_url: "https://lionheartsw.com"
 github_url: "https://github.com/lionheart/WelcomeViewController"
-github_file_prefix: "https://github.com/lionheart/WelcomeViewController/tree/0.1.4"
+github_file_prefix: "https://github.com/lionheart/WelcomeViewController/tree/0.1.5"
 xcodebuild_arguments: ["-workspace", "Example/WelcomeViewController.xcworkspace", "-scheme", "WelcomeViewController"]
 readme: "README.md"
 copyright: "&copy; 2016-2018 Lionheart Software LLC"
