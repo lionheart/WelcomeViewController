@@ -1,6 +1,6 @@
 {
   "name": "WelcomeViewController",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "A welcome view to quickly introduce users to your app.",
   "description": "A welcome view that lets you quickly introduce users to your app.",
   "homepage": "https://github.com/lionheart/WelcomeViewController",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/lionheart/WelcomeViewController.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "social_media_url": "https://twitter.com/lionheartsw",
   "platforms": {
@@ -26,10 +26,10 @@
   "frameworks": "UIKit",
   "dependencies": {
     "SuperLayout": [
-      "~> 1"
+      "~> 2.0"
     ],
     "LionheartExtensions": [
-      "~> 3"
+      "~> 4.0"
     ]
   },
   "swift_version": "4.0"
