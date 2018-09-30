@@ -9,7 +9,7 @@ import UIKit
 import LionheartExtensions
 
 final class PlainButton: UIButton {
-    func setTitle2(_ title: String?, for state: UIControlState, size: CGFloat = 20) {
+    func setTitle2(_ title: String?, for state: UIControl.State, size: CGFloat = 20) {
         guard let title = title else {
             setAttributedTitle(nil, for: state)
             return
@@ -22,7 +22,7 @@ final class PlainButton: UIButton {
         default: color = .white
         }
         
-        let attributes: [NSAttributedStringKey: Any] = [
+        let attributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: size, weight: .medium),
             .foregroundColor: color
         ]

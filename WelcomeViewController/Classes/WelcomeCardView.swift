@@ -27,12 +27,12 @@ final class WelcomeCardView<T>: UIStackView where T: WelcomeCardProvider {
             imageView.tintColor = color
         }
         
-        let headlineAttributes: [NSAttributedStringKey: Any] = [
+        let headlineAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.preferredFont(forTextStyle: .headline)
         ]
         let headlineString = NSAttributedString(string: type.title, attributes: headlineAttributes)
         
-        let descriptionAttributes: [NSAttributedStringKey: Any] = [
+        let descriptionAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.preferredFont(forTextStyle: .subheadline)
         ]
         let descriptionString = NSAttributedString(string: "\n" + type.description, attributes: descriptionAttributes)

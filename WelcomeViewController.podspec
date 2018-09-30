@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source_files = 'WelcomeViewController/Classes/**/*', 'WelcomeViewController/Protocols/**/*'
 
   s.frameworks = 'UIKit'
-  s.dependency 'SuperLayout', '~> 1'
-  s.dependency 'LionheartExtensions', '~> 3'
+  s.dependency 'SuperLayout', '~> 2.0'
+  s.dependency 'LionheartExtensions', '~> 4.0'
   s.swift_version = '4.0'
 end
