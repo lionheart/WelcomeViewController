@@ -1,39 +1,25 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - LionheartExtensions (4.0.0):
-    - LionheartExtensions/Core (= 4.0.0)
-  - LionheartExtensions/Core (4.0.0)
-  - Nimble (7.3.1)
-  - Nimble-Snapshots (6.3.0):
-    - Nimble-Snapshots/Core (= 6.3.0)
-  - Nimble-Snapshots/Core (6.3.0):
-    - FBSnapshotTestCase (~> 2.0)
-    - Nimble (~> 7.0)
-  - Quick (1.3.2)
+  - LionheartExtensions (5.0.0):
+    - LionheartExtensions/Core (= 5.0.0)
+  - LionheartExtensions/Core (5.0.0)
+  - Nimble (8.0.1)
+  - Quick (2.0.0)
   - SuperLayout (2.0.0):
     - SuperLayout/Core (= 2.0.0)
   - SuperLayout/Core (2.0.0)
-  - WelcomeViewController (0.1.5):
-    - LionheartExtensions (~> 4.0)
+  - WelcomeViewController (1.0.0):
+    - LionheartExtensions (~> 5.0)
     - SuperLayout (~> 2.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
-  - Nimble (~> 7.0)
-  - Nimble-Snapshots (~> 6.3.0)
-  - Quick (~> 1.0)
+  - Nimble (~> 8.0)
+  - Quick (~> 2.0)
   - WelcomeViewController (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
     - LionheartExtensions
     - Nimble
-    - Nimble-Snapshots
     - Quick
     - SuperLayout
 
@@ -42,14 +28,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  LionheartExtensions: c6cfe32aa09e0282480185545d414d76eaf5e1d1
-  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
-  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
-  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  LionheartExtensions: 18d0bac160e26709223da967ecc9959beb7045e4
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   SuperLayout: 0208ad821522fb50b62d9b8b808690d190a871ea
-  WelcomeViewController: 5b3d66f98948c6be415918923e7a775896cfc0b0
+  WelcomeViewController: d2315f33b3302c52ed57341b50596823335840b5
 
-PODFILE CHECKSUM: 340d23c954be5863f2b6408dee5739c8672f79b0
+PODFILE CHECKSUM: cb7bdbf7389a77b64538927b97a6d0a39b161af5
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
