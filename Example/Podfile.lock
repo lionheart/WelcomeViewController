@@ -1,13 +1,13 @@
 PODS:
-  - LionheartExtensions (5.0.0):
-    - LionheartExtensions/Core (= 5.0.0)
-  - LionheartExtensions/Core (5.0.0)
+  - LionheartExtensions (5.0.2):
+    - LionheartExtensions/Core (= 5.0.2)
+  - LionheartExtensions/Core (5.0.2)
   - Nimble (8.0.1)
   - Quick (2.0.0)
   - SuperLayout (2.0.0):
     - SuperLayout/Core (= 2.0.0)
   - SuperLayout/Core (2.0.0)
-  - WelcomeViewController (1.0.0):
+  - WelcomeViewController (2.0.0):
     - LionheartExtensions (~> 5.0)
     - SuperLayout (~> 2.0)
 
@@ -28,11 +28,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LionheartExtensions: 18d0bac160e26709223da967ecc9959beb7045e4
+  LionheartExtensions: 09fa816d98176012c8f9adf7f21774f528dbc90e
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   SuperLayout: 0208ad821522fb50b62d9b8b808690d190a871ea
-  WelcomeViewController: d2315f33b3302c52ed57341b50596823335840b5
+  WelcomeViewController: b8fb61c197f8c92af16734b8a9b840582e2069f1
 
 PODFILE CHECKSUM: cb7bdbf7389a77b64538927b97a6d0a39b161af5
 
