@@ -3,7 +3,7 @@ PODS:
     - LionheartExtensions/Core (= 5.0.2)
   - LionheartExtensions/Core (5.0.2)
   - Nimble (8.0.1)
-  - Quick (2.0.0)
+  - Quick (2.1.0)
   - SuperLayout (2.0.0):
     - SuperLayout/Core (= 2.0.0)
   - SuperLayout/Core (2.0.0)
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   LionheartExtensions: 09fa816d98176012c8f9adf7f21774f528dbc90e
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
-  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SuperLayout: 0208ad821522fb50b62d9b8b808690d190a871ea
   WelcomeViewController: b8fb61c197f8c92af16734b8a9b840582e2069f1
 
