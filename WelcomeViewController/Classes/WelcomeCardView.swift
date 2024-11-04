@@ -11,17 +11,17 @@ import SuperLayout
 final class WelcomeCardView<T>: UIStackView where T: WelcomeCardProvider {
     init(_ type: T) {
         super.init(frame: .zero)
-        
+
         translatesAutoresizingMaskIntoConstraints = false
         axis = .horizontal
         spacing = 16
         alignment = .center
-        
+
         var image: UIImage?
         if let imageName = type.imageName {
             image = UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate)
         }
-        
+
         let imageView = UIImageView(image: image)
         if let color = type.color {
             imageView.tintColor = color
@@ -36,15 +36,15 @@ final class WelcomeCardView<T>: UIStackView where T: WelcomeCardProvider {
             .font: UIFont.preferredFont(forTextStyle: .subheadline)
         ]
         let descriptionString = NSAttributedString(string: "\n" + type.description, attributes: descriptionAttributes)
-        
+
         let string = NSMutableAttributedString()
         string.append(headlineString)
         string.append(descriptionString)
-        
+
         let label = UILabel()
         label.attributedText = string
         label.numberOfLines = 0
-        
+
         addArrangedSubview(imageView)
         addArrangedSubview(label)
         

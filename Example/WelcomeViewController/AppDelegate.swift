@@ -28,7 +28,7 @@ extension WelcomeItem: WelcomeCardProvider {
     var description: String {
         switch self {
         case .library: return "Find your purchases and rentals in one convenient place."
-        case .watchNow: return "Start watching the TV shows and mvoies you love from all your supported apps."
+        case .watchNow: return "Start watching the TV shows and movies you love from all your supported apps."
         case .store: return "Get supported apps, discover new movie releases, and find popular TV shows."
         }
     }
@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegateWithWindow {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        rootViewController = WelcomeViewController<WelcomeItem>(header: "Welcome to the TV app.", buttonText: "Continue", callouts: [.library, .watchNow, .store], delegate: nil)
+        rootViewController = WelcomeViewController<WelcomeItem>(header: "Welcome to the TV app.", paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat", buttonText: "Continue", callouts: [.library, .watchNow, .store], delegate: nil)
         return true
     }
 }
