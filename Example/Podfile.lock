@@ -2,8 +2,6 @@ PODS:
   - LionheartExtensions (5.0.2):
     - LionheartExtensions/Core (= 5.0.2)
   - LionheartExtensions/Core (5.0.2)
-  - Nimble (8.0.1)
-  - Quick (2.1.0)
   - SuperLayout (2.0.0):
     - SuperLayout/Core (= 2.0.0)
   - SuperLayout/Core (2.0.0)
@@ -12,15 +10,11 @@ PODS:
     - SuperLayout (~> 2.0)
 
 DEPENDENCIES:
-  - Nimble (~> 8.0)
-  - Quick (~> 2.0)
   - WelcomeViewController (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - LionheartExtensions
-    - Nimble
-    - Quick
     - SuperLayout
 
 EXTERNAL SOURCES:
@@ -29,11 +23,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   LionheartExtensions: 09fa816d98176012c8f9adf7f21774f528dbc90e
-  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
-  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   SuperLayout: 0208ad821522fb50b62d9b8b808690d190a871ea
-  WelcomeViewController: b8fb61c197f8c92af16734b8a9b840582e2069f1
+  WelcomeViewController: ac69522e5555b3f3b2f7cf365cee70b053b16d6d
 
-PODFILE CHECKSUM: cb7bdbf7389a77b64538927b97a6d0a39b161af5
+PODFILE CHECKSUM: 9a102a3bae6bf921b187bfa6b8c862e88ff3815e
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.16.2
