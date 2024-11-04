@@ -93,7 +93,7 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
 
         let stackView = UIStackView(arrangedSubviews: [title, calloutStackView])
         stackView.axis = .vertical
-        stackView.spacing = 32
+        stackView.spacing = 16
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
         let button = PlainButton()
