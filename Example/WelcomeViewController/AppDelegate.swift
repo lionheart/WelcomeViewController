@@ -46,7 +46,7 @@ extension WelcomeItem: WelcomeCardProvider {
     }
 }
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegateWithWindow {
     var window: UIWindow?
 
@@ -55,4 +55,3 @@ class AppDelegate: UIResponder, UIApplicationDelegateWithWindow {
         return true
     }
 }
-

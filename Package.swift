@@ -5,7 +5,7 @@ let package = Package(
     name: "WelcomeViewController",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v17)
     ],
     products: [
         .library(
@@ -24,9 +24,7 @@ let package = Package(
                 .product(name: "SuperLayout", package: "SuperLayout"),
                 .product(name: "LionheartExtensions", package: "LionheartExtensions")
             ],
-            path: "WelcomeViewController",
-            sources: ["Classes", "Protocols"],
-            publicHeadersPath: ""
+            sources: ["Classes", "Protocols"]
         ),
         .testTarget(
             name: "WelcomeViewControllerTests",

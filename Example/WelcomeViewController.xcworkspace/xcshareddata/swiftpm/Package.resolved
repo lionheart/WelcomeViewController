@@ -1,6 +1,15 @@
 {
-  "originHash" : "8ebfea5711b26cad6668a5b4f78a802c20c12b799da2fd6f455ebae7e32a359e",
+  "originHash" : "41c78b6fadedaac6d60b01b4170c0e94ebbaeb31942f137841e3622f3b8bb1d7",
   "pins" : [
+    {
+      "identity" : "lionheartextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lionheart/LionheartExtensions.git",
+      "state" : {
+        "revision" : "93dc8f10e48d0ca1564ab52c51c1b43e811afc7e",
+        "version" : "6.0.0"
+      }
+    },
     {
       "identity" : "nimble",
       "kind" : "remoteSourceControl",
@@ -17,6 +26,15 @@
       "state" : {
         "revision" : "09b3becb37cb2163919a3842a4c5fa6ec7130792",
         "version" : "2.2.1"
+      }
+    },
+    {
+      "identity" : "superlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lionheart/SuperLayout.git",
+      "state" : {
+        "revision" : "c09f7d1e459185345d2d0fce6e606f71ca14269b",
+        "version" : "4.0.0"
       }
     }
   ],
