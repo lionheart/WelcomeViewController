@@ -1,0 +1,24 @@
+{
+  "originHash" : "4f7d530a03f54f828593e8b9a4c4d447b5b27e973e2c0d0573e5401087d32c54",
+  "pins" : [
+    {
+      "identity" : "lionheartextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lionheart/LionheartExtensions.git",
+      "state" : {
+        "revision" : "93dc8f10e48d0ca1564ab52c51c1b43e811afc7e",
+        "version" : "6.0.0"
+      }
+    },
+    {
+      "identity" : "superlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lionheart/SuperLayout.git",
+      "state" : {
+        "revision" : "c09f7d1e459185345d2d0fce6e606f71ca14269b",
+        "version" : "4.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

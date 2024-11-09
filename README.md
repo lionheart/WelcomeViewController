@@ -47,7 +47,7 @@ extension WelcomeItem: WelcomeCardProvider {
     var description: String {
         switch self {
         case .library: return "Find your purchases and rentals in one convenient place."
-        case .watchNow: return "Start watching the TV shows and mvoies you love from all your supported apps."
+        case .watchNow: return "Start watching the TV shows and movies you love from all your supported apps."
         case .store: return "Get supported apps, discover new movie releases, and find popular TV shows."
         }
     }
