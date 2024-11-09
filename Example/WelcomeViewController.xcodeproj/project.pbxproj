@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		1144ED53FE0FA85EC9834E44 /* Pods-WelcomeViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelcomeViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WelcomeViewController_Tests/Pods-WelcomeViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		32AFBF11EDF140E499F22F22 /* Pods-WelcomeViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelcomeViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WelcomeViewController_Tests/Pods-WelcomeViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		37A62C3E2CDF97EE001F0261 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		3E350E93A94410AFC2790076 /* Pods_WelcomeViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WelcomeViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* WelcomeViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WelcomeViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +48,7 @@
 		9C86D3EAC3A55CD6097405BE /* Pods_WelcomeViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WelcomeViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB0AE6A6C58FB3E9E980F81 /* Pods-WelcomeViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelcomeViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WelcomeViewController_Example/Pods-WelcomeViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A210FD8FA9B4E971E97CEF5F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		AB8562A8965C361182F0F54A /* WelcomeViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WelcomeViewController.podspec; path = ../WelcomeViewController.podspec; sourceTree = "<group>"; };
+		AB8562A8965C361182F0F54A /* WelcomeViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WelcomeViewController.podspec; path = ../WelcomeViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA758FBD654DEBAB10F735B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +77,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				37A62C3E2CDF97EE001F0261 /* Package.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for WelcomeViewController */,
 				607FACE81AFB9204008FA782 /* Tests */,
