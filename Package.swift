@@ -23,12 +23,7 @@ let package = Package(
             dependencies: [
                 .product(name: "SuperLayout", package: "SuperLayout"),
                 .product(name: "LionheartExtensions", package: "LionheartExtensions")
-            ],
-            sources: ["Classes", "Protocols"]
-        ),
-        .testTarget(
-            name: "WelcomeViewControllerTests",
-            dependencies: ["WelcomeViewController"]
-        ),
+            ]
+        )
     ]
 )
