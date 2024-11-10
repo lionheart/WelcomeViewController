@@ -66,12 +66,12 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         scroll.alwaysBounceVertical = true
         scroll.contentInset = UIEdgeInsets(top: 16, left: 8, bottom: 0, right: 8)
 
-        var theCalloutViews: [UIView] = []
+        var theCalloutViews: [UIView] = [title]
         if self.paragraph != nil {
             let paragraph = UILabel()
             paragraph.translatesAutoresizingMaskIntoConstraints = false
             var paragraphDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
-            paragraphDescriptor = paragraphDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits: [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
+            paragraphDescriptor = paragraphDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits: [UIFontDescriptor.TraitKey.weight: UIFont.Weight.regular]])
 
             paragraph.font = UIFont(descriptor: paragraphDescriptor, size: paragraphDescriptor.pointSize)
             paragraph.text = self.paragraph
@@ -88,10 +88,11 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         calloutStackView.translatesAutoresizingMaskIntoConstraints = false
         calloutStackView.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
         calloutStackView.isLayoutMarginsRelativeArrangement = true
+        calloutStackView.setCustomSpacing(16, after: title)
 
         theCalloutViews.append(calloutStackView)
 
-        let stackView = UIStackView(arrangedSubviews: [title, calloutStackView])
+        let stackView = UIStackView(arrangedSubviews: [calloutStackView])
         stackView.axis = .vertical
         stackView.spacing = 16
         stackView.translatesAutoresizingMaskIntoConstraints = false

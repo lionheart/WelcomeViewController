@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegateWithWindow {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        rootViewController = WelcomeViewController<WelcomeItem>(header: "Welcome to the TV app.", paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat", buttonText: "Continue", callouts: [.library, .watchNow, .store], delegate: nil)
+        rootViewController = WelcomeViewController<WelcomeItem>(header: "Health CSV Importer 2.0", paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat", buttonText: "Continue", callouts: [.library, .watchNow, .store], delegate: nil)
         return true
     }
 }
