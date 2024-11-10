@@ -86,7 +86,7 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         calloutStackView.axis = .vertical
         calloutStackView.spacing = 32
         calloutStackView.translatesAutoresizingMaskIntoConstraints = false
-        calloutStackView.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        calloutStackView.layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 0, right: 16)
         calloutStackView.isLayoutMarginsRelativeArrangement = true
         calloutStackView.setCustomSpacing(16, after: title)
 
