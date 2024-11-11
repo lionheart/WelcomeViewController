@@ -19,7 +19,7 @@ final class WelcomeCardView<T>: UIStackView where T: WelcomeCardProvider {
 
         var image: UIImage?
         if let imageName = type.imageName {
-            image = UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate)
+            image = UIImage(systemName: imageName)?.withRenderingMode(.alwaysTemplate) ?? UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate)
         }
 
         let imageView = UIImageView(image: image)
