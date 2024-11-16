@@ -104,6 +104,8 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
             secondaryButton = UIButton(type: .custom)
             secondaryButton?.setTitle(secondaryButtonText, for: .normal)
             secondaryButton?.setTitleColor(.darkGray, for: .normal)
+            secondaryButton?.setTitleColor(.lightGray, for: .selected)
+            secondaryButton?.setTitleColor(.lightGray, for: .highlighted)
             secondaryButton?.translatesAutoresizingMaskIntoConstraints = false
         }
 
