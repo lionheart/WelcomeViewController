@@ -9,33 +9,32 @@ import SuperLayout
 
 @objc public protocol WelcomeViewControllerDelegate: AnyObject {
     func welcomeViewControllerButtonDidTouchUpInside(_ sender: Any)
+    func welcomeViewControllerSecondaryButtonDidTouchUpInside(_ sender: Any)
 }
 
 public final class WelcomeViewController<T>: UIViewController where T: WelcomeCardProvider {
     var header: String?
     var paragraph: String?
     var buttonText: String?
+    var secondaryButtonText: String?
     var calloutViews: [WelcomeCardView<T>] = []
     weak var delegate: WelcomeViewControllerDelegate?
     
-    public init(header: String?, buttonText: String?, callouts: [T], delegate: WelcomeViewControllerDelegate?) {
-        super.init(nibName: nil, bundle: nil)
-        
-        self.header = header
-        self.buttonText = buttonText ?? "Continue"
-        self.delegate = delegate
-        
-        for callout in callouts {
-            calloutViews.append(WelcomeCardView<T>(callout))
-        }
+    public convenience init(header: String?, buttonText: String?, callouts: [T], delegate: WelcomeViewControllerDelegate?) {
+        self.init(header: header, paragraph: nil, buttonText: buttonText, callouts: callouts, delegate: delegate)
     }
     
-    public init(header: String?, paragraph: String?, buttonText: String?, callouts: [T], delegate: WelcomeViewControllerDelegate?) {
+    public convenience init(header: String?, paragraph: String?, buttonText: String?, callouts: [T], delegate: WelcomeViewControllerDelegate?) {
+        self.init(header: header, paragraph: paragraph, buttonText: buttonText, secondaryButtonText: nil, callouts: callouts, delegate: delegate)
+    }
+    
+    public init(header: String?, paragraph: String?, buttonText: String?, secondaryButtonText: String?, callouts: [T], delegate: WelcomeViewControllerDelegate?) {
         super.init(nibName: nil, bundle: nil)
         
         self.header = header
         self.paragraph = paragraph
         self.buttonText = buttonText ?? "Continue"
+        self.secondaryButtonText = secondaryButtonText
         self.delegate = delegate
         
         for callout in callouts {
@@ -100,15 +99,32 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         button.setTitle2(buttonText, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
 
+        var secondaryButton: UIButton?
+        if let text = secondaryButtonText {
+            secondaryButton = UIButton(type: .custom)
+            secondaryButton?.setTitle(secondaryButtonText, for: .normal)
+            secondaryButton?.setTitleColor(.darkGray, for: .normal)
+            secondaryButton?.translatesAutoresizingMaskIntoConstraints = false
+        }
+
         if let delegate = delegate {
             let selector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerButtonDidTouchUpInside(_:))
             button.addTarget(delegate, action: selector, for: .touchUpInside)
+            
+            if let button = secondaryButton {
+                let secondarySelector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerSecondaryButtonDidTouchUpInside(_:))
+                button.addTarget(delegate, action: secondarySelector, for: .touchUpInside)
+            }
         }
 
         scroll.addSubview(stackView)
 
         view.addSubview(scroll)
         view.addSubview(button)
+        
+        if let button = secondaryButton {
+            view.addSubview(button)
+        }
 
         let margins = view.layoutMarginsGuide
         scroll.leadingAnchor ~~ margins.leadingAnchor
@@ -125,7 +141,15 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         
         button.leadingAnchor ~~ margins.leadingAnchor
         button.trailingAnchor ~~ margins.trailingAnchor
-        button.bottomAnchor ~~ margins.bottomAnchor - 32
+        if let secondaryButton = secondaryButton {
+            button.bottomAnchor ~~ secondaryButton.topAnchor - 8
+
+            secondaryButton.leadingAnchor ~~ margins.leadingAnchor
+            secondaryButton.trailingAnchor ~~ margins.trailingAnchor
+            secondaryButton.bottomAnchor ~~ margins.bottomAnchor - 32
+        } else {
+            button.bottomAnchor ~~ margins.bottomAnchor - 32
+        }
     }
 }
 
