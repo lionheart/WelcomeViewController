@@ -33,7 +33,7 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         
         self.header = header
         self.paragraph = paragraph
-        self.buttonText = buttonText ?? "Continue"
+        self.buttonText = buttonText
         self.secondaryButtonText = secondaryButtonText
         self.delegate = delegate
         
@@ -95,12 +95,15 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         stackView.spacing = 16
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
-        let button = PlainButton()
-        button.setTitle2(buttonText, for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
+        var primaryButton: PlainButton?
+        if let buttonText {
+            primaryButton = PlainButton()
+            primaryButton?.setTitle2(buttonText, for: .normal)
+            primaryButton?.translatesAutoresizingMaskIntoConstraints = false
+        }
 
         var secondaryButton: UIButton?
-        if let text = secondaryButtonText {
+        if let secondaryButtonText {
             secondaryButton = UIButton(type: .custom)
             secondaryButton?.setTitle(secondaryButtonText, for: .normal)
             secondaryButton?.setTitleColor(.darkGray, for: .normal)
@@ -109,12 +112,15 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
             secondaryButton?.translatesAutoresizingMaskIntoConstraints = false
         }
 
-        if let delegate = delegate {
+        if let delegate {
             let selector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerButtonDidTouchUpInside(_:))
-            button.addTarget(delegate, action: selector, for: .touchUpInside)
+            let secondarySelector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerSecondaryButtonDidTouchUpInside(_:))
+            
+            if let primaryButton {
+                primaryButton.addTarget(delegate, action: selector, for: .touchUpInside)
+            }
             
             if let button = secondaryButton {
-                let secondarySelector = #selector(WelcomeViewControllerDelegate.welcomeViewControllerSecondaryButtonDidTouchUpInside(_:))
                 button.addTarget(delegate, action: secondarySelector, for: .touchUpInside)
             }
         }
@@ -122,35 +128,45 @@ public final class WelcomeViewController<T>: UIViewController where T: WelcomeCa
         scroll.addSubview(stackView)
 
         view.addSubview(scroll)
-        view.addSubview(button)
         
-        if let button = secondaryButton {
-            view.addSubview(button)
+        if let primaryButton {
+            view.addSubview(primaryButton)
+        }
+        
+        if let secondaryButton {
+            view.addSubview(secondaryButton)
         }
 
         let margins = view.layoutMarginsGuide
         scroll.leadingAnchor ~~ margins.leadingAnchor
         scroll.trailingAnchor ~~ margins.trailingAnchor
         scroll.topAnchor ~~ margins.topAnchor
-        scroll.bottomAnchor ~~ button.topAnchor - 16
         
+        if let primaryButton {
+            scroll.bottomAnchor ~~ primaryButton.topAnchor - 16
+        } else {
+            scroll.bottomAnchor ~~ margins.bottomAnchor - 32
+        }
+
         let scrollGuide = scroll.contentLayoutGuide
         stackView.leadingAnchor ~~ scroll.frameLayoutGuide.leadingAnchor
         stackView.trailingAnchor ~~ scroll.frameLayoutGuide.trailingAnchor
         stackView.centerXAnchor ~~ scrollGuide.centerXAnchor
         stackView.topAnchor ~~ scrollGuide.topAnchor
         stackView.bottomAnchor ~~ scrollGuide.bottomAnchor
-        
-        button.leadingAnchor ~~ margins.leadingAnchor
-        button.trailingAnchor ~~ margins.trailingAnchor
-        if let secondaryButton = secondaryButton {
-            button.bottomAnchor ~~ secondaryButton.topAnchor - 8
 
-            secondaryButton.leadingAnchor ~~ margins.leadingAnchor
-            secondaryButton.trailingAnchor ~~ margins.trailingAnchor
-            secondaryButton.bottomAnchor ~~ margins.bottomAnchor - 32
-        } else {
-            button.bottomAnchor ~~ margins.bottomAnchor - 32
+        if let primaryButton {
+            primaryButton.leadingAnchor ~~ margins.leadingAnchor
+            primaryButton.trailingAnchor ~~ margins.trailingAnchor
+            if let secondaryButton {
+                primaryButton.bottomAnchor ~~ secondaryButton.topAnchor - 8
+
+                secondaryButton.leadingAnchor ~~ margins.leadingAnchor
+                secondaryButton.trailingAnchor ~~ margins.trailingAnchor
+                secondaryButton.bottomAnchor ~~ margins.bottomAnchor - 32
+            } else {
+                primaryButton.bottomAnchor ~~ margins.bottomAnchor - 32
+            }
         }
     }
 }
